@@ -4,12 +4,15 @@
   "description": "Album collection app.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine-node spec --autotest --color --watch .",
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jasmine-node": "^1.14.5",
     "node-static": "^0.7.7",
-    "nodemon": "^1.9.1"
+    "nodemon": "^1.9.1",
+    "request": "^2.69.0"
   }
 }
