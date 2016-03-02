@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="javascripts/vendor/underscore.js"></script>
+    <script src="javascripts/vendor/backbone.js"></script>
+    <script src="javascripts/vendor/handlebars.js"></script>
+  </head>
+  <body>
+
+    <main>
+      <p>Loading posts</p>
+    </main>
+
+    <script id="posts_template" type="text/x-handlebars">
+      {{#each posts}}
+        <article>
+          <h1>{{title}}</h1>
+          <p>{{body}}</p>
+        </article>
+      {{/each}}
+    </script>
+    <script src="javascripts/models/post.js"></script>
+    <script src="javascripts/collections/posts.js"></script>
+    <script src="javascripts/views/posts.js"></script>
+    <script src="javascripts/app.js"></script>
+  </body>
+</html>
