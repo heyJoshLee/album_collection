@@ -2,7 +2,7 @@
   "name": "album_collection",
   "version": "1.0.0",
   "description": "Album collection app.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "jasmine-node spec --autotest --color --watch .",
     "start": "nodemon app.js"
