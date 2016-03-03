@@ -12,6 +12,8 @@
       <h1>Albums</h1>
       <ul id="albums"></ul>
     </main>
+
+    <div id="overlay"></div>
     <script data-name="albums" type="text/x-handlebars">
       {{#each albums}}
         <li>
@@ -25,9 +27,28 @@
       {{/each}}
     </script>
 
+    <script data-name="tracks" type="x-handlebars-template">
+      {{#with album}}
+        <a class="close" href="#">Close</a>
+        <img src="{{cover}}" />
+        <h2>{{title}}</h2>
+        <h3>{{artist}}</h3>
+        <p>Released: {{date}}</p>
+      {{/with}}
+      <ol>
+        {{#each tracks}}
+        <li>{{title}}<small>{{length}}</small></li>
+        {{/each}}
+      </ol>
+    </script>
+
+
     <script src="javascripts/models/album.js"></script>
+    <script src="javascripts/models/track.js"></script>
     <script src="javascripts/collections/albums.js"></script>
+    <script src="javascripts/collections/tracks.js"></script>
     <script src="javascripts/views/albums.js"></script>
+    <script src="javascripts/views/tracks.js"></script>
     <script src="javascripts/app.js"></script>
     <script>
         App.init();
