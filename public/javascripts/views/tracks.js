@@ -11,6 +11,7 @@ var TracksView = Backbone.View.extend({
     close: function(e) {
       e.preventDefault();
       this.fadeOut();
+      history.back();
     },
 
     fadeOut: function() {
