@@ -50,4 +50,6 @@ describe("Albums View", function() {
     new_html = $("#albums").html();
     expect(original_html).not.toEqual(new_html);
   });
+
+  
 });
