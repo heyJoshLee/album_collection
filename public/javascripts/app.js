@@ -24,7 +24,7 @@ var App = {
 
   fetchTracks: function(name) {
     var tracks = new (Tracks.extend({
-      url: "albums/" + name + ".json"
+      url: + name + ".json"
     }))();
 
     this.selected_album = this.albums.findWhere({ title: name });
